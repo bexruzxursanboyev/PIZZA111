@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaHut</title>
+    <link rel="stylesheet" href="./2.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #big{
+            animation: move 10s linear 0s infinite normal both;
+        }
+        @keyframes move{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#FEDDDD] font-semibold font-sans overflow-x-hidden">
+    <div class="mt-12 mx-auto w-[90%] flex justify-between items-center">
+        <img class="w-[70px] object-contain transition-all duration-300 ease-in-out hover:scale-125 active:scale-75" src="./piz.png" alt="">
+        <ul class="w-[60%] flex justify-between items-center">
+            <li class=" transition-all duration-150 ease-in active:scale-90"><a href="#3">HOME</a></li>
+            <li class=" transition-all duration-150 ease-in active:scale-90"><a href="#3">OFFERS</a></li>
+            <li class=" transition-all duration-150 ease-in active:scale-90"><a href="#3">ABOUT</a></li>
+            <li class=" transition-all duration-150 ease-in active:scale-90"><a href="#3">CONTACT US</a></li>
+            <button class="w-[130px] h-[40px] rounded-xl text-white bg-[#D13E3E] font-semibold transition-all duration-300 ease-in-out hover:scale-110 active:scale-95 hover:rounded-2xl hover:bg-[#D13E3E]/20 hover:shadow-[3px_3px_10px_#D13E3E] hover:text-[#D13E3E]">SIGN IN</button>
+        </ul>
+    </div>
+    <div class="w-[85%] flex justify-between items-center mx-auto mt-20">
+        <div class="flex-col flex leading-[70px]">
+            <p class="text-[#D13E3E]">Today’s Special Pizza </p>
+            <h1 class="text-[45px] tracking-[1] mb-7">
+                Veggie Supreme
+            </h1>
+            <p class="text-[#A48888] w-[90%] tracking-normal leading-[25px]">Rich tomato sauce base topped with cream cheese, onions, green chil...</p>
+            <div class="w-[100%] flex justify-evenly items-center">
+                <div id="" class="w-[100px] h-[100px] pb-[5px] flex items-start rounded-2xl justify-start mt-10 transition-all duration-300 ease-in-out hover:border-b-4 hover:border-l-4 hover:scale-110  hover:border-[#F54352] hover:shadow-xl hover:bg-white/25 active:scale-75 ">
+                    <div class="w-[90px] h-[90px]  shadow-3xl rounded-[100%]">
+                        <a href="./index.html"><img class="w-full h-[100%] object-contain" src="./za.png" alt=""></a>
+                    </div>
+                </div>
+                <div id="" class="w-[100px] h-[100px] pb-[5px] flex items-start rounded-2xl justify-start mt-10 transition-all duration-300 ease-in-out hover:border-b-4 hover:border-l-4 hover:scale-110  hover:border-[#F54352] hover:shadow-xl hover:bg-white/25 active:scale-75 ">
+                    <div class="w-[90px] h-[90px]  shadow-3xl rounded-[100%]">
+                        <a href="./1.html"><img class="w-full h-[100%] object-contain" src="./za1.png" alt=""></a>
+                    </div>
+                </div>
+                <div id="" class="w-[100px] h-[100px] pb-[5px] flex items-start rounded-2xl justify-start mt-10 transition-all duration-300 ease-in-out border-b-4 border-r-4 scale-110  border-[#F54352] hover:shadow-xl hover:bg-white/25 active:scale-75 ">
+                    <div class="w-[90px] h-[90px]  shadow-3xl rounded-[100%]">
+                        <a href="./2.html"><img class="w-full h-[100%] object-contain" src="./za2.png" alt=""></a>
+                    </div>
+                </div>
+                <div id="" class="w-[100px] h-[100px] pb-[5px] flex items-start rounded-2xl justify-start mt-10 transition-all duration-300 ease-in-out hover:border-b-4 hover:border-r-4 hover:scale-110  hover:border-[#F54352] hover:shadow-xl hover:bg-white/25 active:scale-75 ">
+                    <div class="w-[90px] h-[90px]  shadow-3xl rounded-[100%]">
+                        <a href="./3.html"><img class="w-full h-[100%] object-contain" src="./za3.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img id="big" class="w-[450px] h-[450px] object-cover" src="./za2.png" alt="">
+    </div>
+    <div class="w-[85%] mx-auto mb-10">
+        <div class="w-[45%] flex justify-between items-center">
+            <p class="text-[#D13E3E] transition-all duration-300 ease-in-out hover:scale-110 active:scale-95"><a href="#0">Customize order</a></p>
+            <button class="w-[150px] h-[45px] bg-[#D13E3E] rounded-2xl text-white font-semibold shadow-[5px_5px_15px_0px_#D13E3E] transition-all duration-300 ease-in-out hover:scale-110 active:scale-95 hover:rounded-2xl hover:bg-[#D13E3E]/20 hover:shadow-[3px_3px_10px_#D13E3E] hover:text-[#D13E3E]"><a href="#3">Rs. 1,260</a></button>
+        </div>
+    </div>
+    
+</body>
+</html>
